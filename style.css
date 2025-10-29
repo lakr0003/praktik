@@ -292,18 +292,6 @@ main {
       animation: arrowMove 1s infinite;
       z-index: 4;
     }
-
-    @keyframes arrowMove {
-      0%,
-      100% {
-        transform: rotate(-45deg) translateY(0);
-        opacity: 0.6;
-      }
-      50% {
-        transform: rotate(-45deg) translateY(8px);
-        opacity: 1;
-      }
-    }
   }
 
   .heading {
@@ -621,6 +609,10 @@ main {
     #mig {
       margin-left: 2rem;
       .mig {
+        margin-right: 2rem;
+      }
+      .styrker {
+        gap: 1rem;
         margin-right: 2rem;
       }
     }
