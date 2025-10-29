@@ -37,17 +37,39 @@ window.addEventListener("scroll", () => {
 //   });
 // });
 
+// videos.forEach((video) => {
+//   // Desktop: hover
+//   video.addEventListener("mouseover", function () {
+//     if (window.innerWidth > 768) this.play(); // kun på større skærme
+//   });
+
+//   video.addEventListener("mouseleave", function () {
+//     if (window.innerWidth > 768) this.pause();
+//   });
+
+//   // Mobil / touch: click
+//   video.addEventListener("click", function () {
+//     if (this.paused) {
+//       this.play();
+//     } else {
+//       this.pause();
+//     }
+//   });
+//   // Pause automatisk, hvis video ikke længere er synlig
+//   observer.observe(video);
+// });
+
 videos.forEach((video) => {
   // Desktop: hover
   video.addEventListener("mouseover", function () {
-    if (window.innerWidth > 768) this.play(); // kun på større skærme
+    if (window.innerWidth > 768) this.play();
   });
 
   video.addEventListener("mouseleave", function () {
     if (window.innerWidth > 768) this.pause();
   });
 
-  // Mobil / touch: click
+  // Mobil / touch: click på video starter/pauser
   video.addEventListener("click", function () {
     if (this.paused) {
       this.play();
@@ -55,6 +77,7 @@ videos.forEach((video) => {
       this.pause();
     }
   });
+
   // Pause automatisk, hvis video ikke længere er synlig
   observer.observe(video);
 });
