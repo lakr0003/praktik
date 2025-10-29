@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Serif+Caption:ital@0;1&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><a href="#">Lærke Overgaard</a></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#mig">Mig</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__bg">
+                <img src="img/heroubg.png" alt="Baggrundsbillede af digital design" />
+            </div>
+
+            <div class="hero__overlay"></div>
+
+            <div class="hero__content">
+                <p class="eyebrow">Multimediedesigner</p>
+                <h1 class="hero__title">LÆRKE OVERGAARD</h1>
+
+            </div>
+
+            <a href="#projekter" class="scroll-down">
+                <div class="arrow"></div>
+            </a>
+        </section>
+
+        <div id="projekter" class="heading hidden2">
+            <h2> Projekter</h2>
+            <p>Her kan du se et udvalg af projekter fra mine to semestre på Multimediedesign på EK. </p>
+            <p>Projekterne
+                spænder
+                fra redesign af virksomheders komplette hjemmesider til one-pagers, hvor jeg har arbejdet med alt
+                fra
+                konceptudvikling til færdigt visuelt design.</p>
+        </div>
+
+        <button onclick="topFunction()" class="scrollToTop hidden" id="myBtn" title="Go to top">↑</button>
+
+        <section class="portfolio_section hidden">
+            <ul class="full-width">
+                <li>
+                    <div class="content">
+                        <h3>Marzcia Techau</h3>
+                    </div>
+                    <video class="myVid" loop muted>
+                        <source src="videos/10.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Bareen</h3>
+                    </div>
+                    <video class="myVid" loop muted>
+                        <source src="videos/09.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Misbrugportalen</h3>
+                    </div>
+                    <video class="myVid" loop muted>
+                        <source src="videos/08.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Nam Nam</h3>
+                    </div>
+                    <video class="myVid" loop muted>
+                        <source src="videos/07.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Kimia Healing</h3>
+                    </div>
+                    <video class="myVid" loop muted>
+                        <source src="videos/05.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Pelle Pop Spil</h3>
+                    </div>
+                    <video class="myVid" loop muted>
+                        <source src="videos/04.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="mig">
+            <div class="mig">
+                <div class="mig">
+                    <h2 class="hidden2">Lidt om mig</h2>
+                    <div class="grid">
+                        <p class="hidden2">
+                            Hej! Jeg er <span class="highlight">24 år</span> og studerer på 3. semester på
+                            Multimediedesign. Jeg søger
+                            praktikplads til mit fjerde semester, hvor jeg kan udvikle mine <span
+                                class="highlight">frontend-kompetencer</span>.
+                        </p>
+                        <p class="hidden">
+                            Jeg elsker at skabe <span class="highlight">smukke og funktionelle</span> digitale
+                            løsninger, og har
+                            samtidig stor interesse for <span class="highlight">fotografering og videoproduktion</span>.
+                            Praktikperioden
+                            vil give mig mulighed for at styrke mine <span class="highlight">tekniske færdigheder</span>
+                            og lære fra
+                            erfarne i branchen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="three">
+                <h3><span>3</span> hurtige</h3>
+                <div class="three-quick">
+                    <p class="numb hidden"><span>1.</span> Jeg har en hund</p>
+                    <p class="numb hidden"><span>2.</span> Min livret er lassagne</p>
+                    <p class="numb hidden"><span>3.</span> Jeg kan rulle med maven</p>
+                </div>
+            </div>
+        </section>
+        <section id="mig">
+            <div class="styrker">
+                <h2>Styrker & kompetencer</h2>
+                <div class="skills">
+                    <div class="numb hidden2">
+                        <h3>Programmering</h3>
+                        <ul>
+                            <li>VS Code</li>
+                            <li>HTML5, CSS3, JavaScript</li>
+                            <li>Astro, React, Tailwind</li>
+                            <li>Responsive og brugervenlige webapplikationer</li>
+                            <li>GitHub – versionskontrol og samarbejde</li>
+                            <li>Netlify / one.com – domæne og hosting</li>
+                            <li>Supabase – API-integrationer</li>
+                        </ul>
+                    </div>
+
+                    <div class="numb hidden">
+                        <h3>Grafisk design</h3>
+                        <ul>
+                            <li>Adobe Illustrator, Photoshop, Lightroom</li>
+                            <li>After Effects, Premiere Pro</li>
+                            <li>Visuelt engagerende og professionelle designs</li>
+                        </ul>
+                    </div>
+
+                    <div class="numb hidden2">
+                        <h3>Fotografering & videoproduktion</h3>
+                        <ul>
+                            <li>Fotografering og videoproduktion</li>
+                            <li>Billed- og video-redigering i Photoshop, Lightroom og Premiere Pro</li>
+                        </ul>
+                    </div>
+
+                    <div class="numb hidden">
+                        <h3>Design & UX/UI</h3>
+                        <ul>
+                            <li>Figma – wireframes og prototyper</li>
+                            <li>Designprincipper og lovgivning</li>
+                            <li>Udvikling af intuitive og æstetiske brugeroplevelser</li>
+                            <li>Webdesign – funktionelt og visuelt tiltalende</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <div class="contact-content">
+
+                <div class="contact-info">
+                    <h3 class="hidden2">Skriv mig en mail eller giv mig et kald <span>!</span></h2>
+                        <h3 class="hidden">Email: <a href="mailto:Laerke@kraemerne.dk">Laerke@kraemerne.dk
+                            </a>
+                        </h3>
+                        <h3 class="hidden">Telefon: <a href="tel:+4530753235"> +45 30753235 </a></h3>
+                </div>
+                <img class="footer-img" src="img/heroubg.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
