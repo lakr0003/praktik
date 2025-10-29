@@ -379,7 +379,7 @@ main {
       .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        gap: 2rem;
         p {
           line-height: 1.6;
 
@@ -598,11 +598,12 @@ main {
     #mig {
       .mig {
         padding: 30px;
+        gap: 20px;
       }
       .styrker {
         padding: 30px;
         .skills {
-          gap: 15px;
+          gap: 20px;
         }
       }
     }
