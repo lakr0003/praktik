@@ -417,18 +417,18 @@ main {
         gap: 3.5rem;
 
         ul {
-          list-style: none; /* Fjern standard bullets */
+          list-style: none;
           padding-left: 0;
           margin: 0;
           display: flex;
           flex-direction: column;
-          gap: 0.5rem; /* afstand mellem stikord */
+          gap: 0.5rem;
 
           li {
             font-family: var(--font-text);
             font-size: var(--step-0);
             color: var(--third);
-            padding-left: 1.5rem; /* plads til ikonet */
+            padding-left: 1.5rem;
             position: relative;
             background-color: rgba(62, 95, 159, 0.05);
             border-radius: 8px;
@@ -436,17 +436,6 @@ main {
 
             transition: background-color 0.3s ease, transform 0.3s ease;
             cursor: default;
-
-            /* Tilføj ikon som bullet */
-            &::before {
-              content: ""; /* kan ændres til fx "•" eller anden emoji */
-              position: absolute;
-              left: 0.5rem;
-              top: 50%;
-              transform: translateY(-50%);
-              font-size: var(--step-0);
-              color: var(--second);
-            }
 
             &:hover {
               background-color: var(--second);
@@ -607,13 +596,14 @@ main {
       }
     }
     #mig {
-      margin-left: 2rem;
       .mig {
-        margin-right: 2rem;
+        padding: 30px;
       }
       .styrker {
-        gap: 1rem;
-        margin-right: 2rem;
+        padding: 30px;
+        .skills {
+          gap: 15px;
+        }
       }
     }
 
@@ -635,7 +625,6 @@ main {
         }
         h3 {
           font-size: var(--step-0);
-          max-width: 70ch;
 
           span {
             font-size: var(--step-1);
