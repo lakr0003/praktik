@@ -646,33 +646,90 @@ main {
 
 @media (min-width: 768px) and (max-width: 1200px) {
   main {
-    grid-template-columns: [full-start] 1fr [content-start] minmax(0, 500px) [middle] minmax(0, 500px) [content-end] 1fr [full-end];
-    padding-inline: 2rem;
-  }
+    .heading {
+      grid-column: content-start/content-end;
+      margin: 2rem;
+    }
 
-  header {
-    padding-inline: 2rem;
-  }
+    .hero {
+      max-height: 40vh;
+      .hero__bg {
+        img {
+          transform: translateY(-10%);
+          object-fit: cover;
+          height: 130%;
+        }
+      }
+      .hero__content {
+        align-self: end;
+        margin-bottom: 2rem;
+      }
+    }
+    .portfolio_section {
+      margin-left: 2rem;
+      ul {
+        gap: 0.5rem;
+        --card-width: 700px;
 
-  .heading,
-  .portfolio_section,
-  #ommig,
-  #kontakt {
-    padding-inline: 2rem;
-  }
+        li {
+          min-width: 70%;
+          scroll-snap-align: start;
 
-  .portfolio_section ul {
-    --card-width: 500px;
-    gap: 1rem;
-  }
+          video {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .section {
+      .three {
+        padding: 30px;
+      }
+    }
+    #ommig {
+      .mig {
+        padding: 20px;
+        gap: 20px;
+      }
+      .styrker {
+        padding: 30px;
+        .skills {
+          gap: 20px;
+          h3 {
+            padding-bottom: 1rem;
+          }
+          ul {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
 
-  .section .three {
-    padding-inline: 2rem;
-  }
+    #kontakt {
+      .contact-content {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        align-self: end;
+        .contact-info {
+          padding: 30px;
+        }
+        img {
+          max-width: 200px;
+          height: 150px;
+          object-fit: cover;
+          align-self: end;
+          z-index: 0;
+        }
+        h3 {
+          font-size: var(--step-0);
 
-  #kontakt .contact-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 2rem;
+          span {
+            font-size: var(--step-1);
+          }
+        }
+      }
+    }
   }
 }
